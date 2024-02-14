@@ -125,7 +125,7 @@ svg {
 }
 .heart {
   position: absolute;
-  top: calc(154% - 10px); /* Adjusted to be at the vertical center */
+  top: calc(155% - 10px); /* Adjusted to be at the vertical center */
   left: calc(50% - 7.5px); /* Adjusted to be at the horizontal center */
   width: 15px;
   height: 15px;
