@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Display Example</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .image {
+            margin-bottom: 20px;
+        }
+        img{
+            width: 400px;
+        }
+        .buttons{
+            display: flex;
+        }
+        button{
+            padding: 15px;
+            border-radius: 8px;
+            margin: 20px;
+            width: 150px;
+            border: none;
+        }
+        .cancelBtn{
+            background-color: rgb(211, 127, 127);
+            color: #ffff;
+            border: none;
+        }
+        .nextBtn{
+            background-color: #a5a278;
+            color: #ffff;
+        }
+       
+    </style>
+</head>
+<body>
+    <a href="index.html">
+        <button id="Home">Home</button>
+    </a>
+    <div class="image">
+        <img src="img/for-you-text-2.jpg" alt="Description of the image">
+    </div>
+    <div class="buttons">
+        <a href="">
+            <button id="Cancel" class="cancelBtn">Cancel</button>
+        </a>
+       
+        <a href="main.html">
+            <button id="Next" class="nextBtn">Next</button>
+        </a>
+
+    
+    </div>
+    <script>
+        const cancelButton = document.getElementById('Cancel');
+
+        cancelButton.addEventListener('click', function() {
+            alert('Please, don\'t cancel.'); // Show the notification
+        });
+    </script>
+</body>
+</html>
